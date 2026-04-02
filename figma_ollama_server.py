@@ -85,7 +85,7 @@ def ask_ollama(prompt, max_tokens=1000):
         }
         
         # Use the appropriate Ollama endpoint
-        ollama_endpoint = os.environ.get('OLLAMA_ENDPOINT', 'https://api.ollama.ai/v1/generate')
+        ollama_endpoint = os.environ.get('OLLAMA_ENDPOINT', 'https://api.ollama.ai/api/generate')
         
         response = requests.post(
             ollama_endpoint,
